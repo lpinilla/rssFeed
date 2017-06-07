@@ -1,1 +1,3 @@
-collection('dir.xml')
+<total>
+	for $rssdocument in collection('dir.xml')
+</total>
