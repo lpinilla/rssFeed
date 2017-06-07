@@ -1,9 +1,13 @@
 <total>
 {
 	for $rssdocument in collection('dir.xml')/rss
-		$rssdocument 
 	return 
-	{		<channel>
-		<
+	{	<rss>
+			<channel>
+				{$rssdocument/channel/description}
+				{$rssdocument/channel/link}
+			<channel>
+		</rss>
+	}
 }
 </total>
